@@ -76,8 +76,8 @@ export default function Home() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
 
-          <div className="relative container flex flex-col items-start justify-center min-h-[90vh] px-4 py-24">
-            <div className="max-w-3xl">
+          <div className="relative container flex flex-col items-center justify-center min-h-[90vh] px-4 py-24">
+            <div className="max-w-3xl text-center">
               <div className="inline-block px-4 py-1 mb-6 border border-yellow-500 text-yellow-500 text-sm font-medium">
                 05-07 SEPT, 2025 • CALVARY CITY CHURCH TAWAU
               </div>
@@ -88,11 +88,11 @@ export default function Home() {
                   OF DESTINY
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
+              <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl mx-auto">
                 A transformative conference empowering youth to break barriers, overcome challenges, and forge their own
                 path to greatness.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="#call-to-action">
                   <Button
                     size="lg"
@@ -385,7 +385,7 @@ export default function Home() {
                 Join hundreds of young leaders and embark on a journey that will transform your future. The path to
                 greatness begins with a single step.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://forms.gle/NbPBzFaTkvvHxXjPA"
                   target="_blank"
