@@ -1,1 +1,8 @@
-// Move the entire content of dify-chat.tsx here
+export function DifyChat() {
+  return (
+    <div>
+      {/* Your DifyChat component content goes here */}
+      <p>DifyChat component placeholder</p>
+    </div>
+  );
+}
