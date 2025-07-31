@@ -9,14 +9,14 @@ const DifyWidget: React.FC = () => {
       <Script id="dify-init" strategy="afterInteractive">
         {`
           window.difyChatbotConfig = {
-            token: 'EvdO3x4af0s4IauI',
+            token: 'app-6cOaULGp7UvodRKEKLjJoV2w',
             systemVariables: {}
           };
         `}
       </Script>
       <Script 
         src="https://udify.app/embed.min.js"
-        id="EvdO3x4af0s4IauI"
+        id="app-6cOaULGp7UvodRKEKLjJoV2w"
         strategy="afterInteractive"
       />
       <style

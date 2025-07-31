@@ -29,7 +29,7 @@ const DIFY_API_KEY = process.env.NEXT_PUBLIC_DIFY_API_KEY || '';
  * Send a request to the Dify.ai API
  */
 export async function sendDifyRequest(options: DifyRequestOptions): Promise<DifyResponse> {
-  const { query, inputs = {}, responseMode = 'blocking', conversationId = '', user = '', files = [] } = options;
+  const { query, inputs = {}, responseMode = 'blocking', conversationId = '', user = 'anonymous-user', files = [] } = options;
   
   try {
     const response = await fetch(DIFY_API_URL, {
@@ -42,14 +42,16 @@ export async function sendDifyRequest(options: DifyRequestOptions): Promise<Dify
         inputs,
         query,
         response_mode: responseMode,
-        conversation_id: conversationId,
-        user,
-        files,
+        conversation_id: conversationId || undefined, // Don't send empty string
+        user: user || 'anonymous-user', // Ensure we have a user ID
+        files: files.length > 0 ? files : undefined, // Don't send empty array
       }),
     });
 
     if (!response.ok) {
-      throw new Error(`API request failed with status ${response.status}`);
+      const errorText = await response.text();
+      console.error('API Error Response:', errorText);
+      throw new Error(`API request failed with status ${response.status}: ${errorText}`);
     }
 
     return await response.json();
@@ -66,7 +68,7 @@ export async function streamDifyResponse(options: DifyRequestOptions,
   onChunk: (chunk: string) => void, 
   onComplete: (response: DifyResponse) => void) {
   
-  const { query, inputs = {}, conversationId = '', user = '', files = [] } = options;
+  const { query, inputs = {}, conversationId = '', user = 'anonymous-user', files = [] } = options;
   
   try {
     const response = await fetch(DIFY_API_URL, {
@@ -79,14 +81,16 @@ export async function streamDifyResponse(options: DifyRequestOptions,
         inputs,
         query,
         response_mode: 'streaming',
-        conversation_id: conversationId,
-        user,
-        files,
+        conversation_id: conversationId || undefined, // Don't send empty string
+        user: user || 'anonymous-user', // Ensure we have a user ID
+        files: files.length > 0 ? files : undefined, // Don't send empty array
       }),
     });
 
     if (!response.ok) {
-      throw new Error(`API request failed with status ${response.status}`);
+      const errorText = await response.text();
+      console.error('API Error Response:', errorText);
+      throw new Error(`API request failed with status ${response.status}: ${errorText}`);
     }
 
     const reader = response.body?.getReader();

@@ -1,0 +1,1 @@
+export { DifyChat } from './component.tsx'

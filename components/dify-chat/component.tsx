@@ -1,0 +1,1 @@
+// Move the entire content of dify-chat.tsx here

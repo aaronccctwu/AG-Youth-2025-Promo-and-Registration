@@ -31,10 +31,10 @@ export function Countdown() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
       {[
-        { label: "DAYS", value: String(timeLeft.days).padStart(2, '0') },
-        { label: "HOURS", value: String(timeLeft.hours).padStart(2, '0') },
-        { label: "MINUTES", value: String(timeLeft.minutes).padStart(2, '0') },
-        { label: "SECONDS", value: String(timeLeft.seconds).padStart(2, '0') },
+        { label: "HARI", value: String(timeLeft.days).padStart(2, '0') },
+        { label: "JAM", value: String(timeLeft.hours).padStart(2, '0') },
+        { label: "MINIT", value: String(timeLeft.minutes).padStart(2, '0') },
+        { label: "SAAT", value: String(timeLeft.seconds).padStart(2, '0') },
       ].map((item, index) => (
         <div
           key={index}

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import ClientLayout from './components/ClientLayout'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'AG Youth Sabah 2025 - Kingdom Awakening',
+  description: 'AG Youth Sabah 2025 Conference - Awaken your purpose. Equip your passion.',
+  generator: 'Next.js',
 }
 
 export default function RootLayout({
@@ -14,7 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body>
+        <main>
+          <ClientLayout>{children}</ClientLayout>
+        </main>
+      </body>
     </html>
   )
 }

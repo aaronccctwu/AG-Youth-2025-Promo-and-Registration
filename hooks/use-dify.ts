@@ -20,12 +20,14 @@ export function useDify(options: UseDifyOptions = {}) {
         query,
         inputs,
         conversationId,
-        user: options.defaultUser || '',
+        user: options.defaultUser || 'anonymous-user', // Ensure we always have a user ID
         files,
       };
       
       const response = await sendDifyRequest(requestOptions);
-      setConversationId(response.conversation_id);
+      if (response.conversation_id) {
+        setConversationId(response.conversation_id);
+      }
       return response;
     } catch (err) {
       setError(err instanceof Error ? err : new Error('Unknown error occurred'));
@@ -49,7 +51,7 @@ export function useDify(options: UseDifyOptions = {}) {
       query,
       inputs,
       conversationId,
-      user: options.defaultUser || '',
+      user: options.defaultUser || 'anonymous-user', // Ensure we always have a user ID
       files,
       responseMode: 'streaming',
     };
@@ -58,7 +60,9 @@ export function useDify(options: UseDifyOptions = {}) {
       requestOptions,
       onChunk,
       (response) => {
-        setConversationId(response.conversation_id);
+        if (response.conversation_id) {
+          setConversationId(response.conversation_id);
+        }
         setIsLoading(false);
         onComplete(response);
       }
