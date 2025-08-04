@@ -153,9 +153,9 @@ export default function Home() {
                   image: "/revteh-formal.jpg"
                 },
                 {
-                  name: "Rev. Brian Chang",
+                  name: "Rev. Brian Rajan",
                   role: "FOUNDER & SENIOR PASTOR FGCC",
-                  description: "Beliau merupakan Founder dan Senior Pastor dari Fresh Generation Community Church (FGCC) yang berlokasi di Bandar Sunway Selangor Malaysia. Beliau telah menamatkan program study Bachelor of Theology (B.Th) dari STT LETS Jakarta pada tahun 2014 dan program study Master of Leadership Development (MLD) dari Bible College Malaysia pada tahun 2020. Beliau juga adalah lulusan daripada Diploma Accounting STIE Trisakti Jakarta dan juga lulusan CBC (Certified Behavior Consultant) serta sempat belajar di The School of Acts (TSOA) Kuala Lumpur pada tahun 2002.",
+                  description: "Beliau merupakan seorang departmental director dari Youth Alive Malaysia dan seorang pastor dari Putra Aman Assembly, Seri Kembangan",
                   image: "/revbrian-formal.jpg"
                 }
               ].map((speaker, index) => (
