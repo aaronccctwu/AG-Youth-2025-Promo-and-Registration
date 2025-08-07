@@ -155,7 +155,7 @@ export default function Home() {
                 {
                   name: "Rev. Brian Rajan",
                   role: "FOUNDER & SENIOR PASTOR FGCC",
-                  description: "Beliau merupakan seorang departmental director dari Youth Alive Malaysia dan seorang pastor dari Putra Aman Assembly, Seri Kembangan",
+                  description: "Rev. Brian Ranjan ialah seorang Senior Pastor di Putera Aman Assembly, Seri Kembangan, Selangor. Beliau menamatkan pengajian dalam bidang teologi (Ijazah Sarjana Muda) pada tahun 1997 dan memperoleh Master dalam pembangunan kepimpinan dengan Penghormatan Akademik pada tahun 2023. Sejak 2018, beliau telah melayani dalam Komiti Eksekutif Assemblies of God Malaysia, mengetuai Youth Alive Malaysia serta Komisi Penginjilan & Pemuridan. Sebelum beliau terlibat dalam  kepimpinan ini, beliau adalah seorang Pengarah AG’s National Worship dari 2008 hingga 2019. Rev. Brian telah berkahwin dengan Joyce Lim, dan mereka dikaruniakan dengan tiga orang anak: Isaac Keaton, Isaiah Jayden, dan Hannah Karleen.",
                   image: "/revbrian-formal.jpg"
                 }
               ].map((speaker, index) => (
