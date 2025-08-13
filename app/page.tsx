@@ -55,7 +55,7 @@ export default function Home() {
                     size="lg"
                     className="bg-gradient-to-r from-yellow-500 to-red-500 text-black font-bold hover:from-yellow-600 hover:to-red-600 h-14 px-8 text-lg -mt-2"
                   >
-                    DAFTER SEKARANG
+                    DAFTAR SEKARANG
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
