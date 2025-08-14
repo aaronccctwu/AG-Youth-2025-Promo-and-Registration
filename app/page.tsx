@@ -243,6 +243,13 @@ export default function Home() {
                   image: "/T-shirt design.png",
                   description: "",
                   contact: ""
+                },
+                {
+                  name: "Size Chart",
+                  price: "",
+                  image: "/Size Chart 2025 2.png",
+                  description: "",
+                  contact: ""
                 }
               ].map((item, index) => (
                 <div
