@@ -45,7 +45,7 @@ export default function Home() {
                 Awaken your purpose. Equip your passion. 
                 Join a movement that's reclaiming culture for Christ.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-4">
                 <Link 
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeGsQl7_A59fhdhmFeVadm8YKwv7PHPGTiAMyBn0byqu70ljw/viewform?usp=sf_link"
                   target="_blank"
@@ -59,11 +59,24 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
+                <Link
+                  href="https://drive.google.com/drive/folders/10K65EAILJUZQc9WKjbB8lEyCswp4F3kE?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-yellow-500 to-red-500 text-black font-bold hover:from-yellow-600 hover:to-red-600 h-14 px-8 text-lg md:mt-0 -mt-2"
+                  >
+                    FOTO AG KONFERENS 2025
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
         </section>
 
         {/* Countdown Section */}
@@ -226,7 +239,7 @@ export default function Home() {
         </section>
 
         {/* Merchandise Section */}
-        <section id="merchandise" className="py-24 bg-black">
+``        <section id="merchandise" className="py-24 bg-black">
           <div className="container px-4 md:px-6">
             <div className="text-center mb-16">
               <div className="inline-block px-4 py-1 mb-4 border border-yellow-500 text-yellow-500 text-sm font-medium">
