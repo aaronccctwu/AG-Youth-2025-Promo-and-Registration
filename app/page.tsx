@@ -46,19 +46,6 @@ export default function Home() {
                 Join a movement that's reclaiming culture for Christ.
               </p>
               <div className="flex flex-col gap-4">
-                <Link 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeGsQl7_A59fhdhmFeVadm8YKwv7PHPGTiAMyBn0byqu70ljw/viewform?usp=sf_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-yellow-500 to-red-500 text-black font-bold hover:from-yellow-600 hover:to-red-600 h-14 px-8 text-lg -mt-2"
-                  >
-                    DAFTAR SEKARANG
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
                 <Link
                   href="https://drive.google.com/drive/folders/10K65EAILJUZQc9WKjbB8lEyCswp4F3kE?usp=drive_link"
                   target="_blank"
@@ -66,7 +53,7 @@ export default function Home() {
                 >
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-yellow-500 to-red-500 text-black font-bold hover:from-yellow-600 hover:to-red-600 h-14 px-8 text-lg md:mt-0 -mt-2"
+                    className="bg-gradient-to-r from-yellow-500 to-red-500 text-black font-bold hover:from-yellow-600 hover:to-red-600 h-14 px-8 text-lg -mt-2"
                   >
                     FOTO AG KONFERENS 2025
                     <ArrowRight className="ml-2 h-5 w-5" />
